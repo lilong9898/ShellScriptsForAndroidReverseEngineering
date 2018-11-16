@@ -21,7 +21,7 @@ decompileJar(){
 
     # 如果反编译后代码的输出目录已存在，删除
     if [ -d $outputCodeDir ]; then
-       trash $outputCodeDir
+       rm -r $outputCodeDir
     fi
 
     # 创建代码输出目录
@@ -34,7 +34,7 @@ decompileJar(){
     unzip $outputCodeJarPath -d $outputCodeDir
 
     # 删除前面的jar包
-    trash $outputCodeJarPath
+    rm $outputCodeJarPath
 }
 
 if [ $# -eq 1 ]
