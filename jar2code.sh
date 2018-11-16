@@ -1,9 +1,9 @@
 #!/bin/sh
-# 定义将jar包反编译的函数
 
 # 脚本所在目录
 SHELL_DIR=$(cd "$(dirname "$0")";pwd)
 
+# 定义将jar包反编译的函数
 decompileJar(){
     # jar包路径
     jarPath=$1
